@@ -1,0 +1,47 @@
+{
+  "name": "@rbxts/matter-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/init.lua",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quamatic/matter-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quamatic/matter-app/issues"
+  },
+  "homepage": "https://github.com/Quamatic/matter-app#readme",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.1",
+    "@rbxts/types": "^1.0.774",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "prettier": "^3.2.5",
+    "roblox-ts": "^2.3.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "@rbxts/matter": "^0.8.1"
+  }
+}
