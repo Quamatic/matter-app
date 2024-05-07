@@ -38,10 +38,15 @@
     "eslint-plugin-roblox-ts": "^0.0.36",
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "prettier": "^3.2.5",
-    "roblox-ts": "^2.3.0",
-    "typescript": "^5.4.5"
+    "roblox-ts": "^2.3.0-dev-3a89c93",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@rbxts/matter": "^0.8.1"
+    "@rbxts/matter": "^0.8.1",
+    "@rbxts/plasma": "^0.4.5",
+    "@rbxts/rewire": "^0.3.0"
+  },
+  "dependencies": {
+    "@rbxts/services": "^1.5.4"
   }
 }
