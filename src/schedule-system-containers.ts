@@ -5,7 +5,7 @@ import { ResourceRecord, SystemParameters } from "./types";
 
 export function scheduleSystemContainers<R extends ResourceRecord>(
 	loop: Loop<SystemParameters<R>>,
-	_debugger: Debugger<SystemParameters<R>>,
+	debug: Debugger<SystemParameters<R>>,
 	containers: Folder[],
 ) {
 	const hotReloader = new HotReloader();
@@ -27,7 +27,7 @@ export function scheduleSystemContainers<R extends ResourceRecord>(
 			firstRunSystems.push(system);
 		} else if (previousSystem) {
 			loop.replaceSystem(previousSystem, system);
-			_debugger.replaceSystem(previousSystem, system);
+			debug.replaceSystem(previousSystem, system);
 		} else {
 			loop.scheduleSystem(system);
 		}
@@ -59,5 +59,5 @@ export function scheduleSystemContainers<R extends ResourceRecord>(
 	firstRunSystems = undefined;
 
 	// Initialize debugger
-	_debugger.autoInitialize(loop);
+	debug.autoInitialize(loop);
 }
