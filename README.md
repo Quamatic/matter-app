@@ -10,6 +10,10 @@ Three different dependencies are required to install and use matter-app:
 -   **@rbxts/plasma** - This is used for the Debugger.
 -   **@rbxts/rewire** - This is used for system hot-reloading
 
+```bash
+npm install @rbxts/matter @rbxts/plasma @rbxts/rewire
+```
+
 ## Features
 
 -   **Debugger** - Matter's Debugger is automatically setup and configurable.
