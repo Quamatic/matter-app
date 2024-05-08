@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/matter-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "An easy way to create a Matter-based Roblox game. ",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Quamatic/matter-app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "quamatic",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Quamatic/matter-app/issues"
