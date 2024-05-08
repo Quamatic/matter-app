@@ -43,11 +43,11 @@ export function createMatterApp<const R extends ResourceRecord>({
 	debugger: debuggerConfig,
 }: MatterAppConfig<R>) {
 	// Create matter classes
-	const _debugger = createDebugger(world, debuggerConfig);
-	const loop = new Loop<SystemParameters<R>>(world, resources, _debugger.getWidgets());
+	const debug = createDebugger(world, debuggerConfig);
+	const loop = new Loop<SystemParameters<R>>(world, resources, debug.getWidgets());
 
 	// Schedule system containers
-	scheduleSystemContainers(loop, _debugger, containers);
+	scheduleSystemContainers(loop, debug, containers);
 
 	// Start loop
 	const connections = loop.begin({
