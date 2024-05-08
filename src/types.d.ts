@@ -13,7 +13,11 @@ export type MatterSignalLike<T extends unknown[]> =
 
 export interface DebuggerConfig {
 	/**
-	 * The authorization function
+	 * Keybinds used for toggling the debugger.
+	 */
+	keys: Enum.KeyCode[];
+	/**
+	 * The authorization function.
 	 */
 	authorize: (player: Player) => boolean;
 	/**
