@@ -23,7 +23,9 @@ interface MatterAppConfig<R extends ResourceRecord> {
 	/**
 	 * Loop events to use.
 	 */
-	events?: { [index: string]: MatterSignalLike<unknown[]> };
+	events?: {
+		[index: string]: MatterSignalLike<unknown[]>;
+	};
 	/**
 	 * Debugger config.
 	 */
