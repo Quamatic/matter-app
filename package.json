@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/Quamatic/matter-app.git"
   },
-  "keywords": [],
+  "keywords": [
+    "roblox",
+    "typescript",
+    "roblox-ts",
+    "matter"
+  ],
   "author": "quamatic",
   "license": "ISC",
   "bugs": {
