@@ -7,11 +7,7 @@ export function createDebugger<R extends ResourceRecord>(world: World, debuggerC
 	const _debugger = new Debugger<SystemParameters<R>>(Plasma);
 
 	_debugger.findInstanceFromEntity = (id) => {
-		if (!world.contains(id)) {
-			return undefined;
-		}
-
-		return debuggerConfig.getInstanceForEntity(id);
+		return world.contains(id) ? debuggerConfig.getInstanceForEntity(id) : undefined;
 	};
 
 	_debugger.authorize = debuggerConfig.authorize;
