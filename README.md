@@ -2,6 +2,11 @@
 
 An easy way to create Matter-based Roblox games.
 
+# Todo
+
+-   Publish to @rbxts
+-   Make apps a singleton
+
 # Installation
 
 Three different dependencies are required to install and use matter-app:
